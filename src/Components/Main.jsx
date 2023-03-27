@@ -1,10 +1,14 @@
-import React from 'react'
-import Openning from './Openning'
+import React from "react";
+import Openning from "./Openning";
+import PrevidenciarioServices from "./Sercices";
 
 const MainComponent = () => {
   return (
-    <Openning/>
-  )
-}
+    <>
+      <Openning />
+      <PrevidenciarioServices />
+    </>
+  );
+};
 
-export default MainComponent
+export default MainComponent;
