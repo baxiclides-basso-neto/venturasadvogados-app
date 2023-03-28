@@ -1,3 +1,4 @@
+import FooterComponent from '@/Components/Footer'
 import HeaderComponent from '@/Components/Header'
 import MainComponent from '@/Components/Main'
 import Head from 'next/head'
@@ -18,6 +19,7 @@ export default function Home() {
 
         <HeaderComponent/>
         <MainComponent/>
+        <FooterComponent/>
         
       </main>
     </>
