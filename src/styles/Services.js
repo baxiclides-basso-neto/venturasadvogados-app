@@ -24,6 +24,8 @@ export const ServiceListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
   background-color: #f5f5f5;
   padding: 1rem;
   animation: ${fadeIn} 3s forwards;
@@ -49,7 +51,7 @@ export const ContactButton = styled.button`
   max-width: 320px;
   width: 320px;
   height: 3rem;
-  margin-top: 3rem auto;
+  margin: 1rem auto;
   padding: 0.5rem;
   border-radius: 4px;
   border: none;
