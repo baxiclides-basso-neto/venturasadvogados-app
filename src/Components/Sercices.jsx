@@ -3,6 +3,8 @@ import {
   ServiceColumn,
   ServiceListContainer,
   ShadowedContainer,
+  ContactButton,
+  ContactButtonIcon,
 } from "@/styles/Services";
 import React, { useEffect, useState } from "react";
 const services = [
@@ -49,14 +51,25 @@ const PrevidenciarioServices = () => {
   };
 
   return (
-    <ShadowedContainer>
-      <ServiceListContainer style={{ opacity: isVisible ? 1 : 0 }}>
-        <ServiceColumn>{renderServices().slice(0, columnSize)}</ServiceColumn>
-        <ServiceColumn>
-          {renderServices().slice(columnSize, services.length)}
-        </ServiceColumn>
-      </ServiceListContainer>
-    </ShadowedContainer>
+    <>
+      <ShadowedContainer>
+        <ServiceListContainer style={{ opacity: isVisible ? 1 : 0 }}>
+          <ServiceColumn>{renderServices().slice(0, columnSize)}</ServiceColumn>
+          <ServiceColumn>
+            {renderServices().slice(columnSize, services.length)}
+          </ServiceColumn>
+        </ServiceListContainer>
+        <ContactButton>
+          <ContactButtonIcon
+            src="whatsapp.svg"
+            alt="WhatsApp Icon"
+            width={20}
+            height={20}
+          />
+          Fale conosco pelo WhatsApp
+        </ContactButton>
+      </ShadowedContainer>
+    </>
   );
 };
 

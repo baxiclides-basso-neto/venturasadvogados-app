@@ -15,15 +15,12 @@ export const Container = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
 `;
 
 export const Column = styled.div`
   flex-basis: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 `;
 
 export const IntroHeading = styled.h2`
@@ -36,6 +33,7 @@ export const IntroText = styled.p`
   font-size: 1rem;
   line-height: 1.5;
   color: #34495e;
+  margin-bottom: 0;
 `;
 
 export const ContactButton = styled.button`
@@ -46,9 +44,8 @@ export const ContactButton = styled.button`
   max-width: 320px;
   width: 320px;
   height: 3rem;
-  margin-top: 1rem;
-  margin-left: 0;
-  margin-bottom: 3rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 4px;
   border: none;
