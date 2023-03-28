@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Image from "next/image";
-import BackgroundImg from "../../public/BackgroundImg.jpg";
+import BackgroundImg from "../../public/backgroundImg.jpg";
 
 export const HeaderWrapper = styled.div`
   position: relative;
